@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+      <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="styles1.css">
+     <link href="https://fonys.googleapis.com/css2? family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#">
+            <img src="https://static.vecteezy.com/system/resources/previews/003/206/623/original/youtube-editorial-app-icon-free-vector.jpg" alt="YouTube Logo" class="youtube-logo" />
+        </a>
+        <form class="search-bar">
+            <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+            <button type="submit">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtWm1NAeXFLHQln6bgKZVuK3gnnDbYrtLnZg&usqp=CAU" height="50" width="50"/>
+            </button>
+       </form>
+       <div class="menu-icons">
+        <a href="#">
+            <img src="data:image/png;base64,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" 
+            alt="Upload Video" height="50" width="50" />
+        </a>
+        <a href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAASFBMVEX///9yp89upc57rNJ1qdDu9Pnp8vi70+eYv9xro83U5PD4+/3B2OqEsdRpos2KtdbK3ezd6vOwzOOlxt+dwt3g7PSUu9q20eYxcaLnAAAEa0lEQVR4nO2d7XLiOhQEg4QN/rYxgfd/0xuTbG2tJUVnss5W8O3+nym1sKmKNBIvLwAAAAAAAAAAT00zjac8bV2kI8rakLBQv6ZDiro1JIxTowqOQ+ePBnx3Tw1ttiU8QubURN2twxhGTXB2zh1MOHcrYwm1t/39B76OhZQ3+zDcLAn2wuCqIfIBTErCQj+FIcVQKQmC4micuF9cgpeg0T7BBR+GXMSI6HMQoxlEQx/M/0mZ/Heq0zpkEqfJDdavm6kTDV3wlqtz9BjfOkR9lFwXedKjjOojVp1Wk9f4LxiuH9NGfhC89fv0dFQHd11915T6a/g2vtV3cnFVp+kYPOibGZ6/xfCM4RoMMUyDoQ0M82CIYRoMbWCYB0MM02BoA8M8GGKYBkMbGObBEMM0GNrAMA+GGKbB0AaGeTD8C8Nn2wNuZcN13WSbffyLGuJbo6FYZzoc+iB5ky5Gq7aO4sWqCIXaNjkGydcv9GmuwUyLz5LrPqkR/sldM6zmoKlTqNP/9iAEw2tmbZ5cqkQY4aZEuyFSnmytlbtfIS7yDr1KD3t1swu+lIMQHO89zl6ZpcpHa3ejUt0boh3JFMWlc5Uz0B/nRP11vB0qU4SrqsMt0WZ6nY+9KcJ1d/NL+M5SEb6ec1wvbZ1sy5X1ac4mLMynOjn9Td1eDOM4jdZK2x/hRZ5MGdASsUmI3IEGAAAAAADYjKbMk/mvpTBElGXmX9cNxhGNPQ3ewrBeDP5Nfe5MEd535+QyYHE1jmN99CrH5CvTUpJzVbhY+jE0YS3KBavmH7S9eRzhEcHPqJXFwOjx1KLTVgKr6FrnrKy19cJJ4EI8wxuJlpeEwwXh5ZigtCTp7WtRszi48Kxz/YVV/eBdLKVl2zfMB4HLTh1dMDh5Y2zZogumSY3orCum8s5MeIRXnqNlfOsQ/QypdWdG3j8MNi6+tn+4eo3UbQv2gDH8DAxtYJgHQwzTYGgDwzwYYpgGQxsY5sEQwzQY2sAwD4YYpsHQBoZ5MMQwDYY2MMyDIYZpMLSBYR4MMUzzdF2M/fdp9t+J2n+vTewmuifsJj5pv9T8Ax4Lu+8I/w963g/JfXf1AQAAAAAANmLn90Q9311fomRx8cb72g7ffF/bwXhfm79I97Xt/869Le5NFBIeKf/03sTd3335Y+4vFRPs95fu/w7ap71H+Gi9R3j/d0GzBxyAoQ0M82CIYRoMbWCYB0MM02BoA8M8GGKYBkMbGObBEMM0GNrAMA+GGKbB0AaGeTDEMA2GNn604bPtAY/6GdJv2cfXz5Bafx1hUtsmLkjepIsxqiGd9fhao44vTJanP3aYeBJP67rB3N5TJy/sIjX6i7h+SJe6iRghHLGcla5ONUSqSJPa9ukjT1ihFPcOvf0Y8KJ4sH6MzoXnnBdq8QxvdP7Lm/kgqhPOOb8PcOj80YDvUnW5YrYlPELmVCPtbh3GIJ0CXlhKwnna+pOyXFkbEhbSFeG3iapbQ4JcEQYAAAAAAAAA+Gn8BzDRq2LR7+xqAAAAAElFTkSuQmCC"
+             alt="Apps" height="50" width="50" />
+        </a>
+        <a href="#">
+            <img src="data:image/png;base64,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" 
+            alt="Notification" / height="50" width="50">
+        </a>
+        <a href="#">
+            <img class="menu-cahnnel-icon" src="https://img.freepik.com/premium-vector/3d-youtube-channel-logo_311314-164.jpg" 
+            alt="Your Channel" height="50" width="50" />
+        </a>
+       </div>
+    </header>
+    <div class="categories">
+        <section class="category-section">
+            <button class="category active">ALL</button>
+            <button class="category">category 1</button>
+            <button class="category">category 2</button>
+            <button class="category">category 3</button>
+            <button class="category">category 4</button>
+            <button class="category">category 5</button>
+            <button class="category">category 6</button>
+            <button class="category">category 7</button>
+            <button class="category">category 8</button>
+            <button class="category">category 9</button>
+            <button class="category">category 10</button>
+        </section>
+    </div>
+     <div class="videos">
+         <section class="video-section">
+               <article class="video-container">
+                  <a href="#" class="thumbnail" data-duration="12:24">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+                  </a>
+                  <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title"> Video Title</a>
+                        <a href="#" class="video-channel-name">Channel Name</a>
+                        <div class="video-metadata">
+                            <span>12k views</span>
+                            .
+                            <span > 1 week ago </span>
+                        </div>                    
+                    </div>
+                  </div>
+               </article>
+               <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24">
+                  <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+                </a>
+                <div class="video-bottom-section">
+                  <a href="#">
+                      <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+                  </a>
+                  <div class="video-details">
+                      <a href="#" class="video-title"> Video Title</a>
+                      <a href="#" class="video-channel-name">Channel Name</a>
+                      <div class="video-metadata">
+                          <span>12k views</span>
+                          .
+                          <span > 1 week ago </span>
+                      </div>                    
+                  </div>
+                </div>
+             </article>
+             <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24">
+                  <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+                </a>
+                <div class="video-bottom-section">
+                  <a href="#">
+                      <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+                  </a>
+                  <div class="video-details">
+                      <a href="#" class="video-title"> Video Title</a>
+                      <a href="#" class="video-channel-name">Channel Name</a>
+                      <div class="video-metadata">
+                          <span>12k views</span>
+                          .
+                          <span > 1 week ago </span>
+                      </div>                    
+                  </div>
+                </div>
+             </article>
+             <article class="video-container">
+              <a href="#" class="thumbnail" data-duration="12:24">
+                <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+              </a>
+              <div class="video-bottom-section">
+                <a href="#">
+                    <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-title"> Video Title</a>
+                    <a href="#" class="video-channel-name">Channel Name</a>
+                    <div class="video-metadata">
+                        <span>12k views</span>
+                        .
+                        <span > 1 week ago </span>
+                    </div>                    
+                </div>
+              </div>
+           </article>
+           <article class="video-container">
+            <a href="#" class="thumbnail" data-duration="12:24">
+              <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                  <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+              </a>
+              <div class="video-details">
+                  <a href="#" class="video-title"> Video Title</a>
+                  <a href="#" class="video-channel-name">Channel Name</a>
+                  <div class="video-metadata">
+                      <span>12k views</span>
+                      .
+                      <span > 1 week ago </span>
+                  </div>                    
+              </div>
+            </div>
+         </article>
+         <article class="video-container">
+          <a href="#" class="thumbnail" data-duration="12:24">
+            <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+          </a>
+          <div class="video-bottom-section">
+            <a href="#">
+                <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+            </a>
+            <div class="video-details">
+                <a href="#" class="video-title"> Video Title</a>
+                <a href="#" class="video-channel-name">Channel Name</a>
+                <div class="video-metadata">
+                    <span>12k views</span>
+                    .
+                    <span > 1 week ago </span>
+                </div>                    
+            </div>
+          </div>
+       </article>
+         </section>
+<section class="video-section">
+    <h2 class="video-section-title">
+        Special Section
+        <button class="video-section-title-close">
+             &times;</button>
+        </h2>
+            <article class="video-container">
+               <a href="#" class="thumbnail" data-duration="12:24">
+                 <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+               </a>
+               <div class="video-bottom-section">
+                 <a href="#">
+                     <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+                 </a>
+                 <div class="video-details">
+                     <a href="#" class="video-title"> Video Title</a>
+                     <a href="#" class="video-channel-name">Channel Name</a>
+                     <div class="video-metadata">
+                         <span>12k views</span>
+                         .
+                         <span > 1 week ago </span>
+                     </div>                    
+                 </div>
+               </div>
+            </article>
+            <article class="video-container">
+             <a href="#" class="thumbnail" data-duration="12:24">
+               <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+             </a>
+             <div class="video-bottom-section">
+               <a href="#">
+                   <img clas="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+               </a>
+               <div class="video-details">
+                   <a href="#" class="video-title"> Video Title</a>
+                   <a href="#" class="video-channel-name">Channel Name</a>
+                   <div class="video-metadata">
+                       <span>12k views</span>
+                       .
+                       <span > 1 week ago </span>
+                   </div>                    
+               </div>
+             </div>
+          </article>
+          <article class="video-container">
+             <a href="#" class="thumbnail" data-duration="12:24">
+               <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+             </a>
+             <div class="video-bottom-section">
+               <a href="#">
+                   <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+               </a>
+               <div class="video-details">
+                   <a href="#" class="video-title"> Video Title</a>
+                   <a href="#" class="video-channel-name">Channel Name</a>
+                   <div class="video-metadata">
+                       <span>12k views</span>
+                       .
+                       <span > 1 week ago </span>
+                   </div>                    
+               </div>
+             </div>
+          </article>
+          <article class="video-container">
+           <a href="#" class="thumbnail" data-duration="12:24">
+             <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+           </a>
+           <div class="video-bottom-section">
+             <a href="#">
+                 <img clas="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+             </a>
+             <div class="video-details">
+                 <a href="#" class="video-title"> Video Title</a>
+                 <a href="#" class="video-channel-name">Channel Name</a>
+                 <div class="video-metadata">
+                     <span>12k views</span>
+                     .
+                     <span > 1 week ago </span>
+                 </div>                    
+             </div>
+           </div>
+        </article>
+        <article class="video-container">
+         <a href="#" class="thumbnail" data-duration="12:24">
+           <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+         </a>
+         <div class="video-bottom-section">
+           <a href="#">
+               <img clas="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+           </a>
+           <div class="video-details">
+               <a href="#" class="video-title"> Video Title</a>
+               <a href="#" class="video-channel-name">Channel Name</a>
+               <div class="video-metadata">
+                   <span>12k views</span>
+                   .
+                   <span > 1 week ago </span>
+               </div>                    
+           </div>
+         </div>
+      </article>
+      <article class="video-container">
+       <a href="#" class="thumbnail" data-duration="12:24">
+         <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+       </a>
+       <div class="video-bottom-section">
+         <a href="#">
+             <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+         </a>
+         <div class="video-details">
+             <a href="#" class="video-title"> Video Title</a>
+             <a href="#" class="video-channel-name">Channel Name</a>
+             <div class="video-metadata">
+                 <span>12k views</span>
+                 .
+                 <span > 1 week ago </span>
+             </div>                    
+         </div>
+       </div>
+    </article>
+</section>
+<section class="video-section">
+    <article class="video-container">
+       <a href="#" class="thumbnail" data-duration="12:24">
+         <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+       </a>
+       <div class="video-bottom-section">
+         <a href="#">
+             <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+         </a>
+         <div class="video-details">
+             <a href="#" class="video-title"> Video Title</a>
+             <a href="#" class="video-channel-name">Channel Name</a>
+             <div class="video-metadata">
+                 <span>12k views</span>
+                 .
+                 <span > 1 week ago </span>
+             </div>                    
+         </div>
+       </div>
+    </article>
+    <article class="video-container">
+     <a href="#" class="thumbnail" data-duration="12:24">
+       <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+     </a>
+     <div class="video-bottom-section">
+       <a href="#">
+           <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+       </a>
+       <div class="video-details">
+           <a href="#" class="video-title"> Video Title</a>
+           <a href="#" class="video-channel-name">Channel Name</a>
+           <div class="video-metadata">
+               <span>12k views</span>
+               .
+               <span > 1 week ago </span>
+           </div>                    
+       </div>
+     </div>
+  </article>
+  <article class="video-container">
+     <a href="#" class="thumbnail" data-duration="12:24">
+       <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+     </a>
+     <div class="video-bottom-section">
+       <a href="#">
+           <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+       </a>
+       <div class="video-details">
+           <a href="#" class="video-title"> Video Title</a>
+           <a href="#" class="video-channel-name">Channel Name</a>
+           <div class="video-metadata">
+               <span>12k views</span>
+               .
+               <span > 1 week ago </span>
+           </div>                    
+       </div>
+     </div>
+  </article>
+  <article class="video-container">
+   <a href="#" class="thumbnail" data-duration="12:24">
+     <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+   </a>
+   <div class="video-bottom-section">
+     <a href="#">
+         <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+     </a>
+     <div class="video-details">
+         <a href="#" class="video-title"> Video Title</a>
+         <a href="#" class="video-channel-name">Channel Name</a>
+         <div class="video-metadata">
+             <span>12k views</span>
+             .
+             <span > 1 week ago </span>
+         </div>                    
+     </div>
+   </div>
+</article>
+<article class="video-container">
+ <a href="#" class="thumbnail" data-duration="12:24">
+   <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+ </a>
+ <div class="video-bottom-section">
+   <a href="#">
+       <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+   </a>
+   <div class="video-details">
+       <a href="#" class="video-title"> Video Title</a>
+       <a href="#" class="video-channel-name">Channel Name</a>
+       <div class="video-metadata">
+           <span>12k views</span>
+           .
+           <span > 1 week ago </span>
+       </div>                    
+   </div>
+ </div>
+</article>
+<article class="video-container">
+<a href="#" class="thumbnail" data-duration="12:24">
+ <img class="thumbnail-image" src="http://unsplash.it/250/150"?gravity="center" />
+</a>
+<div class="video-bottom-section">
+ <a href="#">
+     <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center">
+ </a>
+ <div class="video-details">
+     <a href="#" class="video-title"> Video Title</a>
+     <a href="#" class="video-channel-name">Channel Name</a>
+     <div class="video-metadata">
+         <span>12k views</span>
+         .
+         <span > 1 week ago </span>
+     </div>                    
+ </div>
+</div>
+</article>
+</section>
+    </div>
+</body>
+</html>
+
